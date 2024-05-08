@@ -2,7 +2,7 @@
 
 https://start.spring.io/ (부트세팅 사이트)
 
--배포방법
+#배포방법
 인텔리제이 터미널에서 
 ./gradlew build
 cd build
