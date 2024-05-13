@@ -5,8 +5,9 @@ https://start.spring.io/ (부트세팅 사이트)
 # 배포방법
 ```
 인텔리제이 터미널에서 
-./gradlew build
+./gradlew clean build
 cd build
+cd libs
 ```
 ```
 war파일 존재한거를 배포하면 되는데 만약 없다면 
