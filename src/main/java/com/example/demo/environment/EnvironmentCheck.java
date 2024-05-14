@@ -21,9 +21,10 @@ public class EnvironmentCheck {
 
     /*
        프로퍼티 가져오는 방식 연구
-        1. Modify options를 선택한다.
-        2. Add VM options를 선택한다.
-        3. VM options에 다음을 추가한다.
+        1. 서버에 Edit Configration 선택한다.
+        2. Modify options를 선택한다.
+        3. Add VM options를 선택한다.
+        4. VM options에 다음을 추가한다.
         -Dspring.profiles.active=dev (개발) 또는 -Dspring.profiles.active=prod (운영) 를 추가
      */
     @PostConstruct
