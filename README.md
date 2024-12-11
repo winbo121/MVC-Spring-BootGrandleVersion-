@@ -1,8 +1,9 @@
 # MVC-Spring-BootGrandleVersion-
-
+```
 https://start.spring.io/ (부트세팅 사이트)
+```
 https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:dev4.2:dep:build_tool:togradle (egovFrameWork 사용할시 grandle 프로젝트 세팅 방법 )
-
+```
 # 배포방법
 ```
 인텔리제이 터미널에서 
