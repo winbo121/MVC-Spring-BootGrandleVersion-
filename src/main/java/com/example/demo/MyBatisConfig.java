@@ -18,11 +18,12 @@ import javax.sql.DataSource;
 @MapperScan(value = "com.example.demo", sqlSessionFactoryRef = "SqlSessionFactory")
 public class MyBatisConfig {
 
-    @Value("${spring.datasource.mapper-locations}")
+    @Value("${spring.config.activate.mapper-locations}")
     String mPath;
 
     @Bean(name = "dataSource")
-    @ConfigurationProperties(prefix = "spring.datasource")
+    //@ConfigurationProperties(prefix = "spring.datasource") /*아무것도 사용 X*/
+    @ConfigurationProperties(prefix = "spring.config.activate")  /*PROFILE 또는 VM 사용*/
     public DataSource DataSource() {
         return DataSourceBuilder.create().build();
     }

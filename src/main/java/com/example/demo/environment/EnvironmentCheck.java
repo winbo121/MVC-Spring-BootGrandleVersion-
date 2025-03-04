@@ -29,12 +29,21 @@ public class EnvironmentCheck {
      */
     @PostConstruct
     public void init(){
-        String url = environment.getProperty("url1");
-        String username = environment.getProperty("username1");
-        String password = environment.getProperty("password1");
-        System.out.println("environmentCheckUrl: " + url);
-        System.out.println("environmentCheckUsername: " + username);
-        System.out.println("environmentCheckPassword: " + password);
+      
+        /*profile 또는 vm 사용*/
+        
+        String useProfile = environment.getProperty("spring.config.activate.useProfile");
+        String driver = environment.getProperty("spring.config.activate.driver");
+        String jdbc_url = environment.getProperty("spring.config.activate.jdbc-url");
+        String username = environment.getProperty("spring.config.activate.username");
+        String password = environment.getProperty("spring.config.activate.password");
+        
+        System.out.println("useProfile: " + useProfile);
+        System.out.println("driver: " + driver);
+        System.out.println("jdbc_url: " + jdbc_url);
+        System.out.println("username: " + username);
+        System.out.println("password: " + password);
+        
     }
 
 }
